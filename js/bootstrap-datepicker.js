@@ -1428,6 +1428,12 @@
 				.filter('.datepicker-' + DPGlobal.modes[this.viewMode].clsName)
 					.show();
 			this.updateNavArrows();
+		},
+
+		resetView: function() {
+			this.viewDate = this.o.defaultViewDate;
+			this.fill();
+			return this;
 		}
 	};
 
