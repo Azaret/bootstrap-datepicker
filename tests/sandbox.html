@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Datepicker for Bootstrap</title>
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link id="bs-css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"/>
+    <link id="bsdp-css" href="../dist/css/bootstrap-datepicker3.css" rel="stylesheet"/>
+    <script>
+        var page = {bootstrap: 3};
+        function swap_bs() {
+            var bscss = $('#bs-css'),
+                    bsdpcss = $('#bsdp-css');
+            if (page.bootstrap == 3) {
+                bscss.prop('href', '//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css');
+                bsdpcss.prop('href', 'bootstrap-datepicker/css/datepicker.css');
+                page.bootstrap = 2;
+                $(page).trigger('change:bootstrap', 2)
+            }
+            else {
+                bscss.prop('href', '//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css');
+                bsdpcss.prop('href', 'bootstrap-datepicker/css/datepicker3.css');
+                page.bootstrap = 3;
+                $(page).trigger('change:bootstrap', 3)
+            }
+        }
+    </script>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/locales/bootstrap-datepicker.ar.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.az.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.bg.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.bs.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.ca.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.cs.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.cy.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.da.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.de.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.el.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.en-GB.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.es.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.et.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.eu.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.fa.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.fi.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.fo.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.fr.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.fr-CH.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.gl.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.he.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.hr.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.hu.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.hy.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.id.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.is.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.it.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.it-CH.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.ja.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.ka.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.kh.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.kk.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.kr.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.lt.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.lv.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.mk.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.ms.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.nb.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.nl.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.nl-BE.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.no.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.pl.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.pt-BR.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.pt.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.ro.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.rs.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.rs-latin.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.ru.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sk.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sl.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sq.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sr.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sr-latin.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sv.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.sw.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.th.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.tr.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.uk.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.vi.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.zh-CN.js" charset="UTF-8"></script>
+    <script src="../js/locales/bootstrap-datepicker.zh-TW.js" charset="UTF-8"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <style>
+        .sandbox-form label, .sandbox-form span {
+            display: inline-block;
+            margin: .5em .5em;
+            vertical-align: middle;
+        }
+
+        .sandbox-form span label {
+            vertical-align: baseline !important;
+        }
+    </style>
+    <input class="span2 col-md-2 form-control" id="dp"/>
+    <button type="button" id="bt">Reset</button>
+    <script>
+        $(function () {
+            $('#dp').datepicker({
+                title: ""
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
